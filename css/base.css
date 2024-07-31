@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?h72fj4');
+    src: url('../fonts/icomoon.eot?h72fj4#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?h72fj4') format('truetype'),
+        url('../fonts/icomoon.woff?h72fj4') format('woff'),
+        url('../fonts/icomoon.svg?h72fj4#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.logo {
+    float: left;
+    width: 210px;
+    height: inherit;
+    background: url(../image/logo.png) no-repeat center;
+    background-size: 175px 55px;
+}
+
+.search {
+    width: 733px;
+    height: inherit;
+    position: relative;
+}
+
+input[type='search'] {
+    width: 455px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #b1191a;
+    position: absolute;
+    top: 25px;
+    left: 350px;
+}
+
+.shopcar {
+    position: absolute;
+    right: 65px;
+    top: 25px;
+    width: 140px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #dfdfdf;
+    font-size: 12px;
+}
+
+button[type='submit'] {
+    background-color: #b1191a;
+    width: 82px;
+    height: 40px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 25px;
+    left: 805px;
+    border: 1px solid #b1191a;
+    font-size: 16px;
+    color: white;
+}
+
+button[class='shopcar'] {
+    font-family: 'icomoon';
+    color: #dc6161;
+}
+
+.font {
+    position: absolute;
+    right: 75px;
+    top: 22px;
+}
+
+header[class='w'] {
+    position: relative;
+}
+
+.hotword {
+    position: absolute;
+    top: 69px;
+    left: 360px;
+    list-style: none;
+}
+
+.hotword li {
+    float: left;
+    margin-left: 25px;
+    font-size: 12px;
+    color: #666666;
+}
+
+.hotword li:first-child {
+    margin-left: 0;
+}
+
+.hotword li a {
+    color: #666666;
+    text-decoration: none;
+}
+
+.hotword li:first-child a {
+    color: #b1191a;
+}
