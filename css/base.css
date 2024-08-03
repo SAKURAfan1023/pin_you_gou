@@ -622,3 +622,58 @@ hr {
     width: 80px;
     height: 40px;   
 } */
+
+.qiang {
+    height: 280px;
+    width: 1200px;
+    margin: 0 auto;
+    /* background-color: #333333; */
+}
+
+.remenfengqiang {
+    height: 60px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.remenfengqiang2 {
+    /* padding-top: 15px; */
+    height: 60px;
+    float: left;
+    font-size: 16px;
+    line-height: 60px;
+}
+
+.qiang ul {
+    text-decoration: none;
+    list-style: none;
+    float: left;
+}
+
+.qiang ul li {
+    float: left;
+    width: 220px;
+    height: 140px;
+    box-sizing: border-box;
+    border: 1px solid #ededed;
+}
+
+.qiang ul li:first-child {
+    width: 240px;
+    height: 280px;
+}
+
+.box {
+    width: 900px;
+    box-sizing: border-box;
+    height: inherit;
+    float: left;
+}
+
+.qiangright {
+    height: 280px;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #ededed;
+    float: left;
+}
