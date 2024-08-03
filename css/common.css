@@ -35,3 +35,130 @@ header {
 nav {
     height: 515px;
 }
+
+.littlenav {
+    height: 58px;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+.littlenav span {
+    float: left;
+    padding-top: 30px;
+    padding-left: 0;
+    margin-left: 0;
+    font-size: 18px;
+    color: #d77277;
+    font-weight: 500;
+}
+
+.littlenav ul {
+    float: right;
+    list-style: none;
+}
+
+.littlenav ul li {
+    float: left;
+    border-right: 1px solid #999999;
+    height: 12px;
+    /* width: 79px; */
+    padding: 0 15px;
+    box-sizing: border-box;
+    margin-top: 37px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 12px;
+}
+
+.littlenav ul li a {
+    text-decoration: none;
+    color: #999999;
+}
+
+.littlenav ul li:first-child a {
+    color: #c81623;
+}
+
+.shoppingbox {
+    width: 1200px;
+    height: 365px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    border-top: 2px solid #c81623;
+}
+
+.shoppingbox ul {
+    list-style: none;
+    float: left;
+}
+
+.shoppingbox ul li {
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid #ededed;
+}
+
+.shoppingbox ul li:first-child {
+    width: 210px;
+    height: 365px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.shoppingbox ul li:nth-child(2) {
+    width: 330px;
+    height: 365px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.shoppingbox ul li:nth-child(3) {
+    width: 220px;
+    height: 182.5px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.shoppingbox ul li:nth-child(4) {
+    width: 220px;
+    height: 365px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.shoppingbox ul li:nth-child(5) {
+    width: 220px;
+    height: 182.5px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.shoppingbox ul li:nth-child(6) {
+    width: 220px;
+    height: 182.5px;
+    float: left;
+    box-sizing: border-box;
+}
+
+/* .shoppingbox ul li:nth-child(7) {
+    width: 220px;
+    height: 182.5px;
+    float: left;
+    box-sizing: border-box;
+} */
+
+
+
+.shoppingbox ul li:first-child a {
+    float: left;
+    width: 86px;
+    height: 33px;
+    border-bottom: 1px solid #ededed;
+    color: #666666;
+    margin-left: 12px;
+    text-align: center;
+    line-height: 33px;
+    text-decoration: none;
+}
