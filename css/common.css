@@ -224,3 +224,118 @@ nav {
 .changjialogo ul li:hover {
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
+
+footer {
+    box-sizing: border-box;
+    height: 417px;
+    width: 1200px;
+    background-color: #f5f5f5;
+    margin: 0 auto;
+    margin-top: 37px;
+}
+
+footer .serve {
+    width: 1200px;
+    height: 110px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-bottom: 1px solid #ededed;
+}
+
+footer .serve ul {
+    list-style: none;
+}
+
+footer .serve ul li {
+    float: left;
+    width: 240px;
+    height: 110px;
+    box-sizing: border-box;
+    line-height: 25px;
+    padding-top: 30px;
+}
+
+footer .serve ul li:first-child {
+    margin-left: 35px;
+}
+
+footer .serve ul li:last-child {
+    width: 170px;
+}
+
+footer .serve ul img {
+    float: left;
+}
+
+footer .serve ul li h4 {
+    font-size: 14px;
+    margin-left: 57px;
+}
+
+footer .serve ul li p {
+    font-size: 12px;
+    margin-left: 57px;
+}
+
+footer .serve ul li a {
+    text-decoration: none;
+    color: #333333;
+}
+
+footer .help {
+    height: 190px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+footer .help dl {
+    float: left;
+    width: 200px;
+    height: 190px;
+}
+
+footer .help dl:nth-child(1) {
+    margin-left: 37px;
+}
+
+footer .help dl:last-child {
+    width: 100px;
+}
+
+footer .help dl:last-child dd:last-child {
+    padding-left: 5px;
+}
+
+footer .help dl:last-child dt {
+    padding-left: 5px;
+}
+
+
+
+
+footer .help dl dd a {
+    text-decoration: none;
+    color: #666666;
+    font-size: 12px;
+}
+
+footer .help dl dt {
+    color: #333333;
+    font-size: 16px;
+    padding: 16px 0 15px 0;
+}
+
+footer .right {
+    height: 120px;
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 21px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+footer .right p {
+    color: #666666;
+    font-size: 12px;
+    margin-bottom: 16px;
+}
