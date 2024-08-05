@@ -677,3 +677,38 @@ hr {
     border: 1px solid #ededed;
     float: left;
 }
+
+.floor {
+    width: 70px;
+    position: fixed;
+    top: 160px;
+    left: 65px;
+}
+
+.floor a {
+    text-decoration: none;
+    color: #666666;
+    width: 57px;
+    height: 32px;
+    display: block;
+}
+
+.floor ul {
+    list-style: none;
+}
+
+.floor ul li {
+    width: 57px;
+    height: 32px;
+    box-sizing: border-box;
+    border: 2px 0 solid #ededed;
+    font-size: 12px;
+    text-align: center;
+    line-height: 32px;
+}
+
+.floor ul li a:hover {
+    background-color: #c81623;
+    color: #ffffff;
+    z-index: 1;
+}
