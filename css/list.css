@@ -127,3 +127,25 @@
 .mainlist ul li:hover {
     border: 1px solid #c81523;
 }
+
+.mainlist ul li .mainlist_top .bar {
+    width: 130px;
+    height: 12px;
+    position: absolute;
+    top: 385px;
+    left: 75px;
+    border: 1px solid #c81523;
+    border-radius: 6px;
+}
+
+.mainlist .bar_in {
+    height: 100%;
+    width: 50%;
+    padding: 1px;
+    background-color: #c81523;
+    transition: all 0.5s;
+}
+
+.mainlist .bar_in:hover {
+    width: 100%;
+}
