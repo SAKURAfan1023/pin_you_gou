@@ -69,9 +69,9 @@
     margin-top: 20px;
 }
 
-.register_area ul li:nth-child(4) {
+/* .register_area ul li:nth-child(5) {
     margin-top: 45px;
-}
+} */
 
 .register_area ul li:nth-child(2) {
     margin-left: -14px;
@@ -79,6 +79,10 @@
 
 .register_area ul li:nth-child(1) {
     margin-left: 14px;
+}
+
+.register_area ul li:nth-child(4) {
+    margin-left: 116px;
 }
 
 .register_area ul li label {
@@ -106,7 +110,7 @@
     margin-right: 114px;
 }
 
-.register_area ul li:nth-child(4) span {
+.register_area ul li:nth-child(5) span {
     color: #df3033;
     font-weight: 500;
     font-size: 12px;
@@ -126,4 +130,11 @@
     border: 0;
     color: #fff;
     margin: 40px 0 0 70px;
+}
+
+.safe em {
+    padding: 0 12px;
+    background-color: pink;
+    text-decoration: none;
+    font-style: normal;
 }
