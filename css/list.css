@@ -146,6 +146,6 @@
     transition: all 0.5s;
 }
 
-.mainlist .bar_in:hover {
+.mainlist .bar:hover .bar_in {
     width: 100%;
 }
