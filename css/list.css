@@ -60,7 +60,6 @@
 }
 
 .mainlist {
-    height: 1000px;
     width: 1200px;
     margin: 0 auto;
 }
@@ -78,18 +77,19 @@
     margin-left: 13px;
     border: 1px solid #ededed;
     position: relative;
+    overflow: hidden;
 }
 
 .mainlist ul li:nth-child(4n+1) {
     margin-left: 0;
 }
 
-.mainlist ul li:last-child::after {
+.clearfix::after {
     content: '';
-    clear: both;
+    display: block;
     height: 0;
     visibility: hidden;
-    display: block;
+    clear: both;
 }
 
 .mainlist ul li .mainlist_top {
@@ -101,13 +101,13 @@
     color: #a3a3a3;
     font-size: 14px;
     position: absolute;
-    top: 320px;
+    top: 300px;
     left: 13px;
 }
 
 .mainlist ul li .mainlist_top img {
     position: absolute;
-    top: 35px;
+    top: 20px;
     left: 15px;
 }
 
@@ -122,4 +122,8 @@
     color: #fff;
     width: 100%;
     height: 100%;
+}
+
+.mainlist ul li:hover {
+    border: 1px solid #c81523;
 }
