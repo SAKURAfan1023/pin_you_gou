@@ -156,7 +156,7 @@ header[class='w'] {
 hr {
     background-color: #b1191a;
     position: absolute;
-    top: 180px;
+    top: 149px;
     width: 1900px;
     margin: 0 auto;
     height: 3px;
@@ -255,6 +255,7 @@ hr {
     float: left;
     margin-top: 10px;
     border: 1px solid #e4e4e4;
+    box-sizing: border-box;
 }
 
 .navitem dl {
@@ -317,7 +318,7 @@ hr {
     padding-top: 20px;
     box-sizing: border-box;
     height: 70px;
-    width: 62px;
+    width: 61px;
     float: left;
     transition: all 0.5s;
 }

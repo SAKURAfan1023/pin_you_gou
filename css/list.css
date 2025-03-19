@@ -48,7 +48,7 @@
     top: 37px;
     height: 25px;
     position: absolute;
-    left: 600px;
+    left: 576px
 }
 
 .list_title p {
@@ -59,45 +59,49 @@
     left: 492px;
 }
 
-.mainlist {
-    width: 1200px;
+.mainList {
+    width: 80%;
     margin: 0 auto;
 }
 
-.mainlist ul {
+.mainList ul {
     list-style: none;
     margin-top: 25px;
-    float: left;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    /* float: left; */
 }
 
-.mainlist ul li {
-    width: 290px;
+.mainList ul li {
+    flex-basis: 290px;
     height: 460px;
-    float: left;
-    margin-left: 13px;
+    /* float: left; */
+    /* margin-left: 13px; */
     border: 1px solid #ededed;
     position: relative;
     overflow: hidden;
 }
 
-.mainlist ul li:nth-child(4n+1) {
+/* .mainList ul li:nth-child(4n+1) {
     margin-left: 0;
-}
+} */
 
-.clearfix::after {
+/* .clearfix::after {
     content: '';
     display: block;
     height: 0;
     visibility: hidden;
     clear: both;
-}
+} */
 
-.mainlist ul li .mainlist_top {
+.mainList ul li .mainList_top {
     height: 410px;
     width: inherit;
 }
 
-.mainlist ul li .mainlist_top p {
+.mainList ul li .mainList_top p {
     color: #a3a3a3;
     font-size: 14px;
     position: absolute;
@@ -105,18 +109,45 @@
     left: 13px;
 }
 
-.mainlist ul li .mainlist_top img {
+.mainList ul li .mainList_top img {
     position: absolute;
     top: 20px;
     left: 15px;
 }
 
-.mainlist ul li .mainlist_down {
+.mainList ul li .mainList_top .icon {
+    color: #e60012;
+    font-size: 14px;
+    position: absolute;
+    top: 348px;
+    left: 15px;
+    font-weight: 700;
+}
+
+.mainList ul li .mainList_top .nowPrice {
+    color: #e60012;
+    font-size: 22px;
+    position: absolute;
+    top: 340px;
+    left: 25px;
+    font-weight: 700;
+}
+
+.mainList ul li .mainList_top .pastPrice {
+    color: #d8d8d8;
+    font-size: 14px;
+    text-decoration: line-through;
+    position: absolute;
+    top: 348px;
+    left: 85px;
+}
+
+.mainList ul li .mainList_down {
     height: 50px;
     width: inherit;
 }
 
-.mainlist ul li .mainlist_down button {
+.mainList ul li .mainList_down button {
     background-color: #c81523;
     border: 0;
     color: #fff;
@@ -124,11 +155,11 @@
     height: 100%;
 }
 
-.mainlist ul li:hover {
+.mainList ul li:hover {
     border: 1px solid #c81523;
 }
 
-.mainlist ul li .mainlist_top .bar {
+.mainList ul li .mainList_top .bar {
     width: 130px;
     height: 12px;
     position: absolute;
@@ -138,7 +169,7 @@
     border-radius: 6px;
 }
 
-.mainlist .bar_in {
+.mainList .bar_in {
     height: 100%;
     width: 50%;
     padding: 1px;
@@ -146,6 +177,6 @@
     transition: all 0.5s;
 }
 
-.mainlist .bar:hover .bar_in {
+.mainList .bar:hover .bar_in {
     width: 100%;
 }
