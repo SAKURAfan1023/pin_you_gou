@@ -38,6 +38,9 @@ form.addEventListener('submit', function (e) {
       userName: `${inputs[0].value}`,
       password: `${inputs[3].value}`
     }
+    if (!localStorage.getItem('users')) {
+      localStorage.setItem('users', JSON.stringify(users))
+    }
     users = JSON.parse(localStorage.getItem('users'))
     localStorage.removeItem('users')
     // console.log(users);
@@ -46,6 +49,10 @@ form.addEventListener('submit', function (e) {
 
     // console.log(users);
     localStorage.setItem('users', JSON.stringify(users))
+    form.reset()
+    if (confirm('您需要跳转到主页吗？')) {
+      location.href = './index.html'
+    }
   }
 })
 
