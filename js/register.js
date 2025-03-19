@@ -3,8 +3,8 @@ const submit = document.querySelector('[type=submit]')
 const form = document.querySelector('.register_area form')
 const inputs = document.querySelectorAll('input')
 const tips = document.querySelectorAll('.register_area span')
-// const formHtml = document.createElement('form')
-// const register_area = document.querySelector('.register_area')
+const formHtml = document.createElement('form')
+const register_area = document.querySelector('.register_area')
 
 let users = localStorage.getItem('users') || []
 if (users == []) {
@@ -96,51 +96,22 @@ function telephoneNumber() {
 }
 
 function sendCode() {
+  // console.log(111);
+
   let time = 6
-  send.style.disabled = true
-  setInterval(function () {
+  let timeID = 0
+  send.disabled = true
+  timeID = setInterval(function () {
+    // console.log(time);
     time--
-    send.value = `${time}后可重新发送`
-    if (time = 0) {
-      send.style.disabled = false
+    send.innerHTML = `${time}后可重新发送`
+    if (time === 0) {
+      send.disabled = false
+      clearInterval(timeID)
+      send.innerHTML = `发送短信验证码`
     }
   }, 1000)
 }
 
-// register_area.innerHTML = `<form action="submit">
-//                 <ul>
-//                     <div>
-//                         <li>
-//                             <label for="">手机号：</label>
-//                             <input type="text" name="" id="" autocomplete="off" placeholder="请输入您的手机号码">
-//                             <span></span>
-//                         </li>
-//                         <li style="position: relative;">
-//                             <label for="">短信验证码：</label>
-//                             <input type="text" name="" id="" autocomplete="off">
-//                             <button class="sendCode" type="button">发送短信验证码</button>
-//                         </li>
-//                         <li>
-//                             <label for="">登陆密码：</label>
-//                             <input type="text" name="" id="" autocomplete="off" placeholder="请输入6-16位密码">
-//                             <span></span>
-//                         </li>
-//                         <li class="safe">
-//                             <div style="display: inline-block;">安全程度</ style="display: inline-block;">
-//                                 <em style="background-color: #de1111;">弱</em>
-//                                 <em style="background-color: #40b83f;">中</em>
-//                                 <em style="background-color: #f79100;">强</em>
-//                         </li>
-//                         <li><label for="">确认密码：</label>
-//                             <input type="text" name="" id="" autocomplete="off" placeholder="请再次输入密码">
-//                             <span></span>
-//                         </li>
-//                         <li style="margin-left: 90px;">
-//                             <input type="checkbox" name="checkbox" id="" style="width: 15px; height: 15px;">
-//                             <div style="display: inline-block;">同意协议并注册</div>
-//                             <a href="#" style="color: #cb323b;">《知果果用户协议》</a>
-//                         </li>
-//                     </div>
-//                 </ul>
-//                 <button type="submit">完成注册</button>
-//             </form>`
+console.log(register_area);
+
