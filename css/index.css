@@ -25,7 +25,7 @@
 }
 
 input[type='search'] {
-    width: 455px;
+    width: 70%;
     height: 40px;
     box-sizing: border-box;
     border: 1px solid #b1191a;
@@ -71,18 +71,23 @@ button[class='shopcar'] {
 
 header[class='w'] {
     position: relative;
+    top: 0;
+    /* background-color: white; */
 }
 
 .hotword {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
     position: absolute;
     top: 69px;
-    left: 360px;
+    left: 350px;
     list-style: none;
 }
 
 .hotword li {
-    float: left;
-    margin-left: 25px;
+    /* float: left; */
+    /* margin-left: 25px; */
     font-size: 12px;
     color: #666666;
 }
@@ -156,7 +161,7 @@ header[class='w'] {
 hr {
     background-color: #b1191a;
     position: absolute;
-    top: 149px;
+    top: 176px;
     width: 1900px;
     margin: 0 auto;
     height: 3px;
@@ -384,7 +389,7 @@ hr {
 }
 
 .guesswhatyoulike {
-    padding-top: 30px;
+    /* padding-top: 30px; */
     height: 60px;
     float: left;
     font-size: 16px;
@@ -455,7 +460,7 @@ hr {
 }
 
 .youququ {
-    padding-top: 30px;
+    /* padding-top: 30px; */
     height: 60px;
     font-size: 16px;
     line-height: 60px;
@@ -684,25 +689,29 @@ hr {
     position: fixed;
     top: 160px;
     left: 65px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    /* border: 1px solid #666666; */
 }
 
 .floor a {
     text-decoration: none;
     color: #666666;
-    width: 57px;
-    height: 32px;
+    width: 100%;
+    height: 100%;
     display: block;
 }
 
 .floor ul {
     list-style: none;
+    border-collapse: collapse;
 }
 
 .floor ul li {
-    width: 57px;
+    width: 70px;
     height: 32px;
     box-sizing: border-box;
-    border: 2px 0 solid #ededed;
+    border: 1px solid #666666;
     font-size: 12px;
     text-align: center;
     line-height: 32px;
@@ -712,4 +721,10 @@ hr {
     background-color: #c81623;
     color: #ffffff;
     z-index: 1;
+}
+
+.navitem ul li a {
+    list-style: none;
+    text-decoration: none;
+    font-size: 14px;
 }
